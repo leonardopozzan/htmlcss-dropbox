@@ -4,3 +4,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+.flex{
+    display: flex;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* barra di navigazione */
+header nav div.flex{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(159, 246, 159);
+}
+header nav div.flex{
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul.flex{
+    align-items: center;
+}
+header nav ul.flex li{
+    padding-left:10px ;
+    padding-right: 10px;
+}
+
+/* hero */
