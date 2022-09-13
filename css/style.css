@@ -46,6 +46,12 @@ a{
     text-decoration: none;
     color: var(--black);
 }
+.box_big{
+    width: 70%;
+}
+.box_small{
+    width: 30%;
+}
 
 /* barra di navigazione */
 header nav div.flex{
@@ -83,17 +89,13 @@ header .hero h1{
     font-weight: 900;
     padding-bottom: 50px;
 }
-header .hero_right{
-    width: 70%;
-}
-header .hero_left{
-    width: 30%;
+header .box_small{
     position: relative;
 }
-header .hero_right img{
+header .box_big img{
     width: 100%;
 }
-header .hero_left div{
+header .box_small div{
     padding-bottom: 40px;
 }
 header .arrow{
@@ -185,7 +187,7 @@ section .sub:nth-child(2){
     border-bottom: 1px solid black;
     text-align: center;
 }
-.sub i{
+.border i{
     margin-right: 5px;
 }
 .border h3{
@@ -224,4 +226,20 @@ section .sub:nth-child(2){
 }
 .sub .inner_sub div:last-child{
     margin-bottom: 30px;
+}
+
+/* caratteristiche quarto piano tarriffario per team aziendali */
+.border div.box_4{
+    padding: 20px;
+}
+.box_4 .box_big div:last-child{
+    margin-top: 35px;
+}
+.box_4 .box_small a{
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+.box_4 .box_big{
+    margin-right: 60px;
 }
