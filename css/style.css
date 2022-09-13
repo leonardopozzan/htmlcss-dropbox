@@ -33,9 +33,11 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+#section_1st{
+    padding-top: 100px;
+}
 header{
     background-color: var(--heavenly);
-    margin-bottom: 150px;
     height: 700px;
 }
 .flex{
@@ -282,24 +284,17 @@ section h2{
 }
 
 /* sezione delle icone aziendali */
-.box_container{
-    /* justify-content: space-between; */
-}
 .box_side{
-    flex-wrap: wrap;
     width: 30vw;
+    flex-wrap: wrap;
 }
 .box{
     width: 15vw;
     height: 15vw;
     position: relative;
-    min-width: 140px;
-    min-height: 140px;
-    max-width: 170px;
-    max-height: 170px;
 }
 .box img{
-    width: 60%;
+    width: 8vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -338,14 +333,92 @@ section h2{
     font-size: 12px;
     overflow-y: auto;
     height: 30vw;
-    min-height: 280px;
-    max-height: 340px;
-    min-width: 300px;
-    max-width: 320px;
 }
 .box_center img{
     width: 50%;
 }
 .box_center hr{
     width: 20%;
+}
+
+/* sezione sponsor prova gratuita */
+.bg_heavenly{
+    background-color: var(--heavenly);
+}
+.bg_heavenly .flex{
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+.bg_heavenly .flex h2{
+    color: var(--bordeaux);
+    width: 50%;
+}
+.bg_heavenly .flex a{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/* sezione delle domande fequenti */
+.question{
+    border-top: 2px solid black;
+    position: relative;
+}
+.box_questions .question:last-child{
+    border-bottom: 2px solid black;
+}
+.showed{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+.question i{
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    transition: 0.5s;
+}
+.question p{
+    display: none;
+    transition: 0.5s;
+}
+.question:hover p{
+    display: block;
+}
+.question:hover i{
+    transform: rotate(180deg);
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    padding-top: 50px;
+}
+footer nav{
+    padding-bottom: 100px;
+}
+.column{
+    flex-basis: calc(100% / 5);
+    line-height: 30px;
+}
+.column h3{
+    padding-bottom: 10px;
+}
+.column ul li a{
+    color: var(--white);
+}
+.box_footer{
+    display: inline-block;
+    color: gray;
+    border-top: 1px solid white;
+    padding: 30px 0;
+}
+.box_footer select{
+    background-color: var(--black);
+    color: gray;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
 }
