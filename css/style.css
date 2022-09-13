@@ -29,7 +29,8 @@ body{
 .container-small{
     max-width: 1000px;
     min-width: 900px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 header{
     background-color: var(--heavenly);
@@ -52,7 +53,28 @@ a{
 .box_small{
     width: 30%;
 }
-
+.margin_top_200{
+    margin-top: 200px;
+}
+.margin_bottom_50{
+    margin-bottom: 50px;
+}
+.margin_bottom_30{
+    margin-bottom: 30px;
+}
+.margin_bottom_10{
+    margin-bottom: 10px;
+}
+.btn{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 15px;
+}
+.btn_white{
+    background-color: white ;
+    color: black;
+    border: 1px solid black;
+}
 /* barra di navigazione */
 header nav div.flex{
     justify-content: space-between;
@@ -72,11 +94,6 @@ header nav ul.flex{
 header nav ul.flex li{
     padding-left:10px ;
     padding-right: 10px;
-}
-.btn{
-    background-color: var(--blue);
-    color: var(--white);
-    padding: 10px 15px;
 }
 /* hero */
 header .hero{
@@ -108,7 +125,6 @@ header .arrow{
 section h2{
     font-size: 35px;
     font-weight: 700;
-    margin-bottom: 50px;
 }
 
 /* Personalizzazione radio buttons */
@@ -164,15 +180,14 @@ section h2{
 }
 
 /* sezione dei piani tarriffari */
-section .sub{
+.sub{
     width: calc((100% - 50px) / 3);
     margin-top: 50px;
-    margin-bottom: 40px;
 }
-section .border{
+.border{
     border: 1px solid black;
 }
-section .sub:nth-child(2){
+.sub:nth-child(2){
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -201,7 +216,6 @@ section .sub:nth-child(2){
 }
 .sub .duration{
     color: gray;
-    margin-bottom: 30px;
 }
 .sub .btn{
     display: block;
@@ -216,7 +230,6 @@ section .sub:nth-child(2){
 .sub hr{
     width: 20%;
     margin-top: 10px;
-    margin-bottom: 20px;
 }
 .sub .first.check{
     margin-top: 20px;
@@ -224,10 +237,6 @@ section .sub:nth-child(2){
 .sub .check i{
     color: var(--blue);
 }
-.sub .inner_sub div:last-child{
-    margin-bottom: 30px;
-}
-
 /* caratteristiche quarto piano tarriffario per team aziendali */
 .border div.box_4{
     padding: 20px;
@@ -242,4 +251,31 @@ section .sub:nth-child(2){
 }
 .box_4 .box_big{
     margin-right: 60px;
+}
+
+/* sezione dei partner */
+#partner .box_big{
+    width: 60%;
+    margin-right: 40px;
+}
+#partner .box_small{
+    width: 40%;
+    padding-top: 50px;
+}
+/* sezione delle operazioni */
+.cards{
+    flex-wrap: wrap;
+}
+.card{
+    width: calc((100% - 60px)/ 3);
+}
+.card img{
+    width: 100%;
+}
+.card h3{
+    font-size: 22px;
+}
+.cards .card:nth-of-type(3n+2){
+    margin-left: 30px;
+    margin-right: 30px;
 }
