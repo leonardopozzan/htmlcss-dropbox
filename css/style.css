@@ -17,6 +17,7 @@
     --yellow: #FFD830;
     --black: #000;
     --white: #FFF;
+    --lightgray: #F5F5F5;
 }
 body{
     font-family: 'Lato', sans-serif;
@@ -291,9 +292,19 @@ section h2{
 .box{
     width: 15vw;
     height: 15vw;
+    position: relative;
+}
+.box img{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
 }
 .box.green{
     background-color: var(--green);
+    border: 10px solid var(--lightgreen);
 }
 .box.bordeaux{
     background-color: var(--bordeaux);
@@ -315,4 +326,16 @@ section h2{
 }
 .box.yellow{
     background-color: var(--yellow);
+}
+.box_center{
+    background-color: var(--lightgray);
+    width: calc(100% - 60vw);
+    padding: 30px;
+    font-size: 12px;
+}
+.box_center img{
+    width: 50%;
+}
+.box_center hr{
+    width: 20%;
 }
