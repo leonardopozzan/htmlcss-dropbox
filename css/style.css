@@ -67,7 +67,11 @@ header nav ul.flex li{
     padding-left:10px ;
     padding-right: 10px;
 }
-
+.btn{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 15px;
+}
 /* hero */
 header .hero{
     margin-top: 80px;
@@ -112,12 +116,13 @@ section h2{
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     margin-right: 20px;
+    line-height: 24px;
 }
 .container_button input {
     position: absolute;
@@ -128,8 +133,8 @@ section h2{
     position: absolute;
     top: 0;
     left: 0;
-    height: 22px;
-    width: 22px;
+    height: 25px;
+    width: 25px;
     background-color: #eee;
     border-radius: 50%;
 }
@@ -150,8 +155,73 @@ section h2{
 .container_button .checkmark:after {
     top: 6px;
     left: 6px;
-    width: 10.5px;
-    height: 10.5px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     background: white;
+}
+
+/* sezione dei piani tarriffari */
+section .sub{
+    width: calc((100% - 50px) / 3);
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+section .border{
+    border: 1px solid black;
+}
+section .sub:nth-child(2){
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.inner_sub{
+    width: 80%;
+    margin: auto;
+}
+.border div:not(.inner_sub){
+    padding: 10px 0;
+}
+.border .user{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.sub i{
+    margin-right: 5px;
+}
+.border h3{
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+.sub .inner_sub .price{
+    font-weight: bold;
+    padding-bottom: 0;
+}
+.sub .duration{
+    color: gray;
+    margin-bottom: 30px;
+}
+.sub .btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+.sub .under_line{
+    text-decoration: underline;
+    color: blue;
+}
+.sub hr{
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.sub .first.check{
+    margin-top: 20px;
+}
+.sub .check i{
+    color: var(--blue);
+}
+.sub .inner_sub div:last-child{
+    margin-bottom: 30px;
 }
