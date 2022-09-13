@@ -24,12 +24,12 @@ body{
 }
 .container{
     max-width: 1200px;
-    min-width: 900px;
+    min-width: 950px;
     margin:auto;
 }
 .container-small{
     max-width: 1000px;
-    min-width: 900px;
+    min-width: 950px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -283,7 +283,7 @@ section h2{
 
 /* sezione delle icone aziendali */
 .box_container{
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .box_side{
     flex-wrap: wrap;
@@ -293,6 +293,10 @@ section h2{
     width: 15vw;
     height: 15vw;
     position: relative;
+    min-width: 140px;
+    min-height: 140px;
+    max-width: 170px;
+    max-height: 170px;
 }
 .box img{
     width: 60%;
@@ -332,6 +336,12 @@ section h2{
     width: calc(100% - 60vw);
     padding: 30px;
     font-size: 12px;
+    overflow-y: auto;
+    height: 30vw;
+    min-height: 280px;
+    max-height: 340px;
+    min-width: 300px;
+    max-width: 320px;
 }
 .box_center img{
     width: 50%;
