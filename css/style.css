@@ -116,7 +116,7 @@ header .list_visible li img{
     transform: translate(0%, 25%);
 }
 
-/* lista a comparsa con hover */
+/* lista a comparsa con hover della nav bar*/
 header .list_hidden{
     line-height: normal;
     font-size: 14px;
@@ -166,6 +166,7 @@ header .list_hidden.type_4{
     right: 0;
     left: auto;
 }
+
 /* animazione della barra di navigazione */
 header .list_visible > li:not(.not):hover{
     border-bottom: 3px solid black;
@@ -319,6 +320,7 @@ section h2{
 .sub .check i{
     color: var(--blue);
 }
+
 /* caratteristiche quarto piano tarriffario per team aziendali */
 .border div.box_4{
     padding: 20px;
@@ -344,6 +346,7 @@ section h2{
     width: 40%;
     padding-top: 50px;
 }
+
 /* sezione delle operazioni */
 .cards{
     flex-wrap: wrap;
