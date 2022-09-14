@@ -81,10 +81,12 @@ a{
     color: black;
     border: 1px solid black;
 }
+
 /* animazioni dei bottoni */
 .btn:hover{
     opacity: 0.8;
 }
+
 /* barra di navigazione */
 header .flex.nav_bar{
     justify-content: space-between;
@@ -93,7 +95,7 @@ header .flex.nav_bar{
     top:0;
     left: 0;
     width: 100%;
-    min-width: 900px;
+    min-width: 950px;
     height: 80px;
     background-color: white;
     z-index: 1000;
@@ -113,6 +115,8 @@ header .list_visible > li{
 header .list_visible li img{
     transform: translate(0%, 25%);
 }
+
+/* lista a comparsa con hover */
 header .list_hidden{
     line-height: normal;
     font-size: 14px;
@@ -121,8 +125,9 @@ header .list_hidden{
     background-color: var(--pink);
     width: 450px;
     height: 450px;
-    border-radius: 0 10px 10px 10px;
     display: none;
+    z-index: 750;
+    padding-top: 20px;
 }
 header .list_hidden .box_big{
     width: 55%;
@@ -134,14 +139,32 @@ header .list_hidden ul li{
     padding: 10px;
 }
 .layover{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
-    top: 0;
+    top: 80px;
     right: 0;
     left: 0;
     bottom: 0;
     z-index: 500;
+    height: calc(100vh - 80px);
+    width: 100vw;
     display: none;
+}
+header .list_hidden.type_2{
+    width: 250px;
+    height: 250px;
+}
+header .list_hidden.type_3{
+    width: 350px;
+    height: 170px;
+    right: 0;
+    left: auto;
+}
+header .list_hidden.type_4{
+    width: 200px;
+    height: 300px;
+    right: 0;
+    left: auto;
 }
 /* animazione della barra di navigazione */
 header .list_visible > li:not(.not):hover{
@@ -149,6 +172,9 @@ header .list_visible > li:not(.not):hover{
     background-color: var(--pink);
 }
 header .list_visible > li:hover .list_hidden{
+    display: block;
+}
+header .list_visible > li:not(.not, .not_1):hover ~ .layover{
     display: block;
 }
 
